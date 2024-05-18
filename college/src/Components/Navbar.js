@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Nav.css';
 import  {NavLink}  from 'react-router-dom';
-import logo from '../Img/BlackLogo1.png'; 
+import logo from './Img/BlackLogo1.png'; 
 
 export default function Navbar() {
   return (
@@ -16,7 +16,7 @@ export default function Navbar() {
           <NavLink to='/course' className="nav-item">Course</NavLink>
           <NavLink to='/contact' className="nav-item">Contact</NavLink>
         </div>
-        <button className='btn'><NavLink> CheckInfo</NavLink></button>
+       <NavLink className="nav-item"> CheckInfo</NavLink>
       </nav>
     </div>
   );

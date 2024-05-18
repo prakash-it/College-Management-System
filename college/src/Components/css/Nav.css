@@ -4,16 +4,21 @@
   }
   
   .nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: #FEFEDF;
-    padding: 10px 20px; 
+    background-color: #ffffff;
+    padding: 10px 20px;
+    z-index: 1000; 
   }
   
+
   .logo {
     width: 112px;
     height: 60px;
+  
   }
   
   .nav-links {
@@ -27,7 +32,7 @@
   .nav-item {
     margin: 0 15px;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
   }
   
   .nav-item:last-child {
@@ -37,7 +42,7 @@
   .btn {
     background-color: #00aff5; 
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;

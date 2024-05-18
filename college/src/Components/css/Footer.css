@@ -1,9 +1,9 @@
 .footerdiv{
-    margin-top: 20px;
+    margin-top: 90px;
 }
 .footer {
-    background-color: #FEFEDF;
-    color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     padding: 20px 0;
     text-align: center;
     border-top-left-radius: 15px;
@@ -43,25 +43,25 @@
 }
 
 .footer-section ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .social-icon {
     margin: 0 10px;
     font-size: 1.5em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .footer-bottom {

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Components/css/Footer.css'
-import logo from '../Img/BlackLogo1.png';
+import logo from './Img/BlackLogo1.png';
 import  {NavLink}  from 'react-router-dom';
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -26,7 +26,7 @@ In today's digital world, where technology permeates every aspect of our lives, 
                             <ul>
                                 <li><NavLink to="/">Home</NavLink></li>
                                 <li><NavLink to="/about">About Us</NavLink></li>
-                                <NavLink to='/course' className="nav-item">Course</NavLink>
+                               <li> <NavLink to='/course'>Course</NavLink></li>
                                 <li><NavLink to="/contact">Contact Us</NavLink></li>
                             </ul>
                         </div>
