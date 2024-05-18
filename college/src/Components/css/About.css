@@ -1,0 +1,46 @@
+.about-section {
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-1 {
+    width: 30%;
+  }
+  
+  .col-2 {
+    width: 70%;
+  }
+  
+  h4 {
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for clickable headings */
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  .vision-mission {
+    margin-top: 20px;
+  }
+  
+  .vision-mission h5 {
+    margin-bottom: 10px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .col-1, .col-2 {
+      width: 100%;
+    }
+  }
+  
