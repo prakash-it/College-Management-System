@@ -36,13 +36,14 @@
   
   .text-box h1 {
     font-size: 62px;
+    
   }
   
   .text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
-    
+    font-size: 14px; 
   }
+
   
   .btn1 {
     display: inline-block;
@@ -71,7 +72,7 @@
     margin: auto;
    
     text-align: center;
-    padding-top:109px;
+    padding-top:100px;
 }
 
 .row

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 .footerdiv{
     margin-top: 90px;
 }
@@ -33,6 +34,10 @@
     margin: 5px 0;
 }
 
+.footer-section p
+{
+    font-family: "Kalam", cursive;
+}
 .footer-section ul {
     list-style: none;
     padding: 0;
