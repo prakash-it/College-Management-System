@@ -19,6 +19,7 @@ export default function Home() {
  }
   return (
     <>
+    {/* =======================header section================================ */}
       <div className='img'>
       <div className='overlay'>
       <div className='text-box'>
@@ -28,7 +29,7 @@ export default function Home() {
      </div>
       </div>
     </div>
-
+{/* =======================facilities section================================ */}
     <div className="facilities">
   <h1 className='hp'>Our facilities</h1>
   <p className='hp'>"From academic support centers to state-of-the-art laboratories, our college facilities are designed to enhance learning, foster innovation, and support student success</p>
@@ -51,9 +52,9 @@ export default function Home() {
   </div>
 </div>
 
+{/* =======================Gallery section================================ */}
 <div className='container'>
   <h1 className='h1'>Our college Gallery</h1>
-  <p className='para'>Empowering minds to shape the future, our college fosters creativity, critical thinking, and community engagement. With a diverse and inclusive environment, we inspire excellence in education, research, and personal growth. Join us to embark on a journey of discovery, where every voice is valued, and every dream is nurtured."</p>
 <div className='gallery'>
   <img src={pic1} alt=''/>
   <img src={pic2} alt=''/>
@@ -61,6 +62,23 @@ export default function Home() {
   <img src={pic4} alt=''/>
   <img src={pic5} alt=''/>
   <img src={pic6} alt=''/>
+</div>
+</div>
+
+<div className='testimonials'>
+<h1>What Our Student Say</h1>
+<p>as dffgd esgtdf sdzv fgbdghmnf arfwersdvs jndgfb gtfjhbfgdvdfg rtsfg gdt sf</p>
+
+<div className='row'>
+  <div className='testimonials-col'>
+    {/* <img src={} alt=''/> */}
+    <div>
+                    <p>
+                        dlkfjserihgciurh ecrihdgipsreajrivhqera giwtrsdfgkeradgkjdf ivhdigu heaoigh;eoawij giuehgweirghbg
+                    </p>
+                    <h3>Christine Berklry</h3>
+                </div>
+  </div>
 </div>
 </div>
     </>

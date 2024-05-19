@@ -15,8 +15,9 @@ export default function Navbar() {
           <NavLink to='/about' className="nav-item">About</NavLink>
           <NavLink to='/course' className="nav-item">Course</NavLink>
           <NavLink to='/contact' className="nav-item">Contact</NavLink>
+          
         </div>
-       <NavLink className="nav-item"> CheckInfo</NavLink>
+       <NavLink className="nav-item" to='/info'> CheckInfo</NavLink>
       </nav>
     </div>
   );

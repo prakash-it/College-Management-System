@@ -49,7 +49,7 @@
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
-
+    border: 1px solid white;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -156,8 +156,4 @@
 .h1{
   padding-left: 13%;
   font-family: "Kalam", cursive;  
-}
-.para
-{
-  font-family: "Kalam", cursive;
 }
