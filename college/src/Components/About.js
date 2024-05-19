@@ -1,69 +1,58 @@
-import React, { useState } from 'react';
+import React from 'react';
+import pic1 from './Img/pic1.jpg'
+import pic2 from './Img/pic2.jpg'
+import pic3 from './Img/pic3.jpg'
+import pic4 from './Img/pic4.jpg'
+import pic5 from './Img/pic5.jpg'
+import pic6 from './Img/pic6.jpg'
+import stu1 from './Img/stu-1.jpg'
+import stu2 from './Img/stu-2.jpg'
 import './css/About.css'
 export default function About() {
 
-  const [showabout, setAbout] = useState(false)
-  const [showAbout, setShowAbout] = useState(false);
-  const [showVisionMission, setShowVisionMission] = useState(false);
-  const toggleAbout = () => {
-    setShowAbout(!showAbout);
-    setShowVisionMission(false);
-  };
-
-  const toggleVisionMission = () => {
-    setShowVisionMission(!showVisionMission);
-    setShowAbout(false); 
-  };
+ 
   return (
-    <div className="about-section">
-      <div className="row">
-        <div className="col-1">
-          <h4 onClick={toggleAbout}>About PC EDU</h4>
-          <h4>About The College</h4>
-          <h4 onClick={toggleVisionMission}>Vision & Mission</h4>
-        </div>
-        <div className="col-2">
-      {!showabout && 
-
-          (<p>
-            PC Education College is a well-established institution committed to providing quality education and training across various disciplines. With campuses situated in diverse locations, PC Education College caters to the educational needs of a wide range of students. The college offers a plethora of programs including diploma courses, undergraduate degrees, and professional certifications, ensuring that students have ample choices to pursue their academic and career goals.
-
-            At PC Education College, emphasis is placed not only on theoretical knowledge but also on practical learning experiences. The curriculum is designed to be dynamic and industry-relevant, equipping students with the skills and expertise necessary to thrive in today's competitive job market. Through hands-on projects, internships, and industrial training programs, students gain valuable insights and real-world experience, preparing them for successful careers ahead.
-
-            One of the distinguishing features of PC Education College is its faculty members, who are highly qualified and experienced in their respective fields. They serve as mentors and guides, nurturing students' intellectual growth and fostering a conducive learning environment. The college also frequently invites industry experts and guest lecturers to share their insights, providing students with diverse perspectives and networking opportunities.
-
-            PC Education College takes pride in its state-of-the-art facilities and infrastructure, which are designed to support various academic and extracurricular activities. From well-equipped laboratories and libraries to sports facilities and student lounges, the college offers a vibrant campus life conducive to holistic development.
-
-            Moreover, PC Education College places a strong emphasis on research and innovation. Students are encouraged to explore their interests, engage in research projects, and contribute to the advancement of knowledge in their respective fields. The college also supports entrepreneurship initiatives, providing resources and mentorship to aspiring entrepreneurs.
-
-            In addition to academic excellence, PC Education College places a high value on character building and ethical values. Students are encouraged to uphold principles of integrity, respect, and social responsibility, preparing them to become responsible citizens and leaders in their communities.
-
-            Furthermore, PC Education College is committed to fostering a diverse and inclusive environment where students from different backgrounds feel welcome and valued. The college celebrates cultural diversity and encourages cross-cultural exchange through various events and activities.
-
-            In conclusion, PC Education College stands as a beacon of excellence in the field of education, striving to empower students with knowledge, skills, and values that will enable them to make meaningful contributions to society. With its focus on academic rigor, practical learning, research, and inclusivity, the college continues to shape the future leaders and innovators of tomorrow.
-            
-          </p>)}
-
-
-
-          {showVisionMission && (
-            <div className="vision-mission">
-              <h5>Vision:</h5>
-              <p>To be a leading institution in PC education, empowering individuals with the knowledge and skills to thrive in the digital age.</p>
-              <h5>Mission:</h5>
-              <p>
-                <ul>
-                  <li>To provide comprehensive PC education programs that cater to diverse learning needs and skill levels.</li>
-                  <li>To foster a dynamic learning environment that promotes innovation, critical thinking, and problem-solving in the realm of PC technology.</li>
-                  <li>To cultivate a community of lifelong learners equipped to adapt and excel in an ever-evolving technological landscape.</li>
-                  <li>To collaborate with industry partners to ensure our curriculum remains relevant and aligned with current and emerging trends in PC technology.</li>
-                  <li>To instill values of integrity, professionalism, and ethical conduct in our students, preparing them to contribute positively to society as responsible digital citizens.</li>
-                </ul>
-              </p>
-            </div>
-          )}
+  <>
+    <div className='container'>
+        <h1 className='h1'>Our college Gallery</h1>
+        <div className='gallery'>
+          <img src={pic1} alt='' />
+          <img src={pic2} alt='' />
+          <img src={pic3} alt='' />
+          <img src={pic4} alt='' />
+          <img src={pic5} alt='' />
+          <img src={pic6} alt='' />
         </div>
       </div>
-    </div>
+
+      <div className='testimonials'>
+        <h1 className='hp'>What Our Student Say</h1>
+        <p className='hp'>The campus buzzes with energy, filled with a diverse community of students from all walks of life. From engaging lectures to lively discussions in the cafeteria, every day brings new experiences and opportunities for growth. I'm studying [insert major or field of study], which has allowed me to delve deep into my passion and expand my knowledge in ways I never thought possible. Overall, my college experience has been enriching, challenging, and truly unforgettable.</p>
+
+        <div className='row'>
+          <div className='testimonials-col'>
+            <img src={stu1} alt='' />
+            <div>
+            <h3>Olivia</h3>
+              <p>
+              PC education, or personal computing education, is becoming increasingly vital in today's digital age. It's not just about learning how to use computers; it's about understanding how they work, how to navigate the vast online world responsibly, and how to leverage technology to solve real-world problems. In our college.
+              </p>
+              
+            </div>
+          </div>
+
+          <div className='testimonials-col'>
+           <img src={stu2} alt=''/>
+           <div>
+           <h3>Lily</h3>
+                    <p>
+                    PC education is integrated into various courses across disciplines, empowering students with essential digital literacy skills. From coding workshops to cybersecurity seminars, we're equipped with the tools to thrive in a technology-driven society. PC education isn't just about mastering software; it's about preparing for the future.
+                    </p>
+                    
+                </div>
+          </div>
+        </div>
+      </div>
+  </>
   );
 }
