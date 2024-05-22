@@ -120,12 +120,12 @@
   --s: 190px; /* control the size */
   --g: 10px;  /* control the gap */
   --f: 2.5;   /* control the scale factor */
+  padding-top: 5%;
   display: grid;
   gap: var(--g);
-  width: calc(3 * var(--s) + 2 * var(--g));
+  width: calc(3*var(--s) + 2*var(--g));
   aspect-ratio: 1;
-  grid-template-columns: repeat(3, auto);
-  margin: 0 auto; /* Center the gallery horizontally */
+  grid-template-columns: repeat(3,auto);
 }
 
 .gallery > img {
@@ -139,22 +139,25 @@
   transition: .35s linear;
 }
 
-.gallery img:hover {
+.gallery img:hover{
   filter: grayscale(0);
-  width: calc(var(--s) * var(--f));
-  height: calc(var(--s) * var(--f));
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
 }
 
-.container {
-  padding: 4% 0;
-  background-color: #04558f;
-  text-align: center; /* Center the content horizontally */
+
+.container 
+{
+  padding-left: 34%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color:#04558f;
+}
+.h1{
+  padding-left: 13%;
+  font-family: "Kalam", cursive;  
 }
 
-.h1 {
-  font-family: "Kalam", cursive;
-  color: white; /* Change font color to white */
-}
 
 .testimonials
 {
