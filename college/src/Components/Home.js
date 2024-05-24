@@ -55,18 +55,19 @@ export default function Home() {
       </div>
 
       {/* =======================Gallery section================================ */}
-      <div className='container'>
-        <h1 className='h1'>Our college Gallery</h1>
-        <div className='gallery'>
-          <img src={pic1} alt='' />
-          <img src={pic2} alt='' />
-          <img src={pic3} alt='' />
-          <img src={pic4} alt='' />
-          <img src={pic5} alt='' />
-          <img src={pic6} alt='' />
-        </div>
-      </div>
+      <div class='container'>
+    <h1 class='h1'>Our College Gallery</h1>
+    <div class='gallery'>
+      <img src={pic1} alt='' />
+      <img src={pic2} alt='' />
+      <img src={pic3} alt='' />
+      <img src={pic4} alt='' />
+      <img src={pic5} alt='' />
+      <img src={pic6} alt='' />
+    </div>
+  </div>
 
+  
       <div className='testimonials'>
         <h1 className='hp'>What Our Student Say</h1>
         <p className='hp'>The campus buzzes with energy, filled with a diverse community of students from all walks of life. From engaging lectures to lively discussions in the cafeteria, every day brings new experiences and opportunities for growth. I'm studying [insert major or field of study], which has allowed me to delve deep into my passion and expand my knowledge in ways I never thought possible. Overall, my college experience has been enriching, challenging, and truly unforgettable.</p>
