@@ -13,7 +13,7 @@ router.get('/get',(req,res)=>{
     .then(users => {res.json(users)})
     .catch(err => {
             
-        console.error(err);
+        console.error(err); 
         res.status(500).json({ error: 'Internal Server Error' });
     });
 })
