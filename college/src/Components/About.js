@@ -7,6 +7,9 @@ import pic5 from './Img/pic5.jpg'
 import pic6 from './Img/pic6.jpg'
 import stu1 from './Img/stu-1.jpg'
 import stu2 from './Img/stu-2.jpg'
+import img1 from './Img/library.png'
+import img2 from './Img/basketball.png'
+import img3 from './Img/cafeteria.png'
 import './css/About.css'
 export default function About() {
 
@@ -14,24 +17,8 @@ export default function About() {
   return (
   <>
 
-<div class="banner">
-  <div class="banner-item">
-    <p class="banner-item-number">90K+</p>
-    <p class="banner-item-text">Management Staffs</p>
-  </div>
-  <div class="banner-item">
-    <p class="banner-item-number">45M</p>
-    <p class="banner-item-text">students</p>
-  </div>
-  <div class="banner-item">
-    <p class="banner-item-number">100+</p>
-    <p class="banner-item-text"> courses</p>
-  </div>
-  <div class="banner-item">
-    <p class="banner-item-number">380K</p>
-    <p class="banner-item-text"> Yearly passed out students</p>
-  </div>
-</div>
+
+
 
     <div className='containers'>
         <h1 className='h1'>Our college Gallery</h1>
@@ -42,6 +29,28 @@ export default function About() {
           <img src={pic4} alt='' />
           <img src={pic5} alt='' />
           <img src={pic6} alt='' />
+        </div>
+      </div>
+
+      <div className="facilities">
+        <h1 className='hp'>Our facilities</h1>
+        <p className='hp'>"From academic support centers to state-of-the-art laboratories, our college facilities are designed to enhance learning, foster innovation, and support student success</p>
+        <div className="row">
+          <div className="facilities-col">
+            <img className='img' src={img1} alt='Library' />
+            <h3>World Class Library</h3>
+            <p>College libraries offer a vast array of resources including books, journals, online databases, and multimedia materials, supporting research and enhancing learning opportunities.</p>
+          </div>
+          <div className="facilities-col">
+            <img className='img' src={img2} alt='Library' />
+            <h3>Largest play Ground</h3>
+            <p>Playground for Recreation: A well-equipped playground provides students with a space for physical activity, sports, and recreation, promoting overall health and well-being.</p>
+          </div>
+          <div className="facilities-col">
+            <img className='img' src={img3} alt='Library' />
+            <h3>Tasty and Healthy Food</h3>
+            <p>Access to tasty and nutritious food on campus ensures that students have the energy and nourishment they need to focus on their studies and engage fully in campus life. </p>
+          </div>
         </div>
       </div>
 
