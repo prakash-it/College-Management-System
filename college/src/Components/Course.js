@@ -2,10 +2,13 @@ import React from 'react'
 import img1 from './Img/library.png'
 import img2 from './Img/basketball.png'
 import img3 from './Img/cafeteria.png'
+import './css/course.css'
 
 export default function Course() {
   return (
-    <div>
+    <>
+    <h1 className='heads'>Courses We provide</h1>
+
        <div className="facilities">
         <h1 className='hp'>Our facilities</h1>
         <p className='hp'>"From academic support centers to state-of-the-art laboratories, our college facilities are designed to enhance learning, foster innovation, and support student success</p>
@@ -27,6 +30,6 @@ export default function Course() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }

@@ -13,7 +13,27 @@ export default function About() {
  
   return (
   <>
-    <div className='container'>
+
+<div class="banner">
+  <div class="banner-item">
+    <p class="banner-item-number">90K+</p>
+    <p class="banner-item-text">Management Staffs</p>
+  </div>
+  <div class="banner-item">
+    <p class="banner-item-number">45M</p>
+    <p class="banner-item-text">students</p>
+  </div>
+  <div class="banner-item">
+    <p class="banner-item-number">100+</p>
+    <p class="banner-item-text"> courses</p>
+  </div>
+  <div class="banner-item">
+    <p class="banner-item-number">380K</p>
+    <p class="banner-item-text"> Yearly passed out students</p>
+  </div>
+</div>
+
+    <div className='containers'>
         <h1 className='h1'>Our college Gallery</h1>
         <div className='gallery'>
           <img src={pic1} alt='' />
