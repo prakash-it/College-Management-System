@@ -7,7 +7,7 @@ export default function Course() {
     <>
       <div className='cos'>
         <h1 className='heads'>Courses We provide</h1>
-        <div class="containerr">
+        <div class="conta">
           <div class="card">
             <h2>Bachelor degree</h2>
             <p>
@@ -28,6 +28,10 @@ A Master's degree course refers to an advanced academic program that allows indi
           </div>
           <div class="card">
             <h2>LAW</h2>
+            <p>A law course is an educational program that focuses on the study of law and legal principles. These courses are typically offered at universities, colleges, and law schools and are designed to provide students with a comprehensive understanding of the legal system, legal theories, and the practical application of law.</p>
+          </div>
+          <div class="card">
+            <h2>Arts and scinece</h2>
             <p>A law course is an educational program that focuses on the study of law and legal principles. These courses are typically offered at universities, colleges, and law schools and are designed to provide students with a comprehensive understanding of the legal system, legal theories, and the practical application of law.</p>
           </div>
         </div>

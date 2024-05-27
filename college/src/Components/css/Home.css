@@ -133,10 +133,12 @@
 .banner-item-number {
   font-size: 80px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .banner-item-text {
   font-size: 18px;
+  color: white;
 }
 
 

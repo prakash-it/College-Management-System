@@ -9,7 +9,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background-color: #fafafa;
+  
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -29,13 +29,13 @@
   }
   
   .contact-form {
-    background-color: #1abc9c;
+    background-color: #5ddfc5;
     position: relative;
   }
   
   .circle {
     border-radius: 50%;
-    background: linear-gradient(135deg, transparent 20%, #149279);
+    background: linear-gradient(135deg, transparent 20%, #5ddfc5);
     position: absolute;
   }
   
@@ -58,7 +58,7 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: #1abc9c;
+    background-color: #5ddfc5;
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -130,7 +130,7 @@
     background-color: #fff;
     border: 2px solid #fafafa;
     font-size: 0.95rem;
-    color: #1abc9c;
+    color: #5ddfc5;
     line-height: 1;
     border-radius: 25px;
     outline: none;
@@ -164,7 +164,7 @@
     opacity: 0;
     transition: 0.3s;
     height: 5px;
-    background-color: #1abc9c;
+    background-color: #5ddfc5;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -217,34 +217,7 @@
     margin-right: 0.7rem;
   }
   
-  .social-media {
-    padding: 2rem 0 0 0;
-  }
-  
-  .social-media p {
-    color: #333;
-  }
-  
-  .social-icons {
-    display: flex;
-    margin-top: 0.5rem;
-  }
-  
-  .social-icons a {
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #1abc9c, #149279);
-    color: #fff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 0.5rem;
-    transition: 0.3s;
-  }
-  
-  .social-icons a:hover {
-    transform: scale(1.05);
-  }
+
   
   .contact-info:before {
     content: "";
@@ -257,17 +230,7 @@
     right: 50px;
     opacity: 0.3;
   }
-  
-  .big-circle {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #1cd4af, #159b80);
-    bottom: 50%;
-    right: 50%;
-    transform: translate(-40%, 38%);
-  }
+
   
   .big-circle:after {
     content: "";
