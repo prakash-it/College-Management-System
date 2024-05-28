@@ -6,6 +6,7 @@ import phone from './Img/phone.png'
 export default function Contact() {
   return (
     <>
+     
        <div class="containerrs">
       <img src="img/shape.png" class="square" alt="" />
       <div class="form">
