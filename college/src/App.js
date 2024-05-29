@@ -7,6 +7,9 @@ import Contact from '../src/Components/Contact'
 import Footer from './Components/Footer';
 import Info from './Components/Info';
 import Course from './Components/Course';
+import Adminlogin from './Components/Adminlogin';
+import Teacherlogin from './Components/Teacherlogin';
+import Studentlogin from './Components/Studentlogin';
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
       <Route path='/course' element={<Course/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/info' element={<Info/>}/>
-     
+     <Route path='/admin' element={<Adminlogin/>}/>
+     <Route path='/teacher' element={<Teacherlogin/>}/>
+     <Route path='/student' element={<Studentlogin/>}/>
     </Routes>
 
     <Footer/>
