@@ -1,8 +1,5 @@
   import React from 'react'
   import './css/Info.css'
-  import admin from './Img/Admin.jpg'
-  import student from './Img/Student.jpg'
-  import Teacher from './Img/Teacher.jpg'
 import {useNavigate} from 'react-router-dom'
 
   export default function Info() {
