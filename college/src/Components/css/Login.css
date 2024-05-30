@@ -1,0 +1,22 @@
+.compliment {
+    display: flex;
+  }
+  
+  .left-side {
+    flex: 1;
+  }
+  
+  .right-side {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-side form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-side form input {
+    margin-bottom: 10px;
+  }
+  
