@@ -1,24 +1,24 @@
-const express =require('express')
-const mongoose = require('mongoose')
-const students = require('./routes/Students-data')
-const teachers = require('./routes/teachers-data')
+const express = require('express')
+const db = require('./config/DataBase')
+const student= require('./routes/users')
+const teacher = require('./routes/teacher')
+const admin = require('./routes/admin')
 
-const app=express()
 
-const cors =require('cors')
-app.use(cors())
-mongoose.connect('mongodb://127.0.0.1:27017/College-system')
+const app = express() 
+require('dotenv').config()
+db()
 
-mongoose.connection.on('connected',()=>{
-    console.log("Data-Base is connected")
+app.use(express.json());
+app.use('/api/user',student)
+app.use('/api/teacher',teacher)
+app.use('/api/admin',admin)
+
+app.use('/',(req,res)=>{
+    res.send("Hey Users")
 })
 
-app.get('/',(req,res)=>{
-    res.send("Back-end")
-})
-
-app.use('/students',students)
-app.use('/teacher',teachers)
-app.listen(5000,()=>{
-    console.log("Server is Ready");
+app.listen(process.env.PORT, ()=>{
+    console.log('Server is Running');
+    
 })
