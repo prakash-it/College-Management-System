@@ -3,12 +3,13 @@ const bcrypt = require('bcrypt');
 const Teacher = require('../models/teacher'); 
 const routes = express.Router();
 
+// Signup Route
 routes.post('/signup', async (req, res) => {
   try {
     const { empolyid, username, email, password } = req.body;
 
     if (!empolyid || !username || !email || !password) {
-      return res.status(400).json({ message: 'All the data is required' });
+      return res.status(400).json({ message: 'All fields are required' });
     }
 
     const existingUser = await Teacher.findOne({ empolyid });
@@ -23,35 +24,37 @@ routes.post('/signup', async (req, res) => {
 
     await teacher.save();
 
-    res.status(200).json({ message: 'Teacher account created successfully' });
+    return res.status(201).json({ message: 'Teacher account created successfully' });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    return res.status(500).json({ message: err.message });
   }
 });
 
+// Login Route
+routes.post('/login', async (req, res) => {
+  try {
+    const { empolyid, password } = req.body;
 
-routes.post('/login',async(req,res)=>{
-  try{
-    const{empolyid,password}= req.body
     if (!empolyid || !password) {
-      return res.status(400).json({ message: 'All the data is required' });
+      return res.status(400).json({ message: 'All fields are required' });
     }
 
     const user = await Teacher.findOne({ empolyid });
-  
+
     if (!user) {
-      return res.status(400).json({ message: 'Invalid Id'});
+      return res.status(401).json({ message: 'Invalid Id' });
     }
 
-    const match = await bcrypt.compare(password, user.password)
+    const match = await bcrypt.compare(password, user.password);
 
-    if(!match){
-      return res.status(400).json({ message: 'Invalid Password'});
+    if (!match) {
+      return res.status(401).json({ message: 'Invalid Password' });
     }
-    return res.status(200).json({ message: 'Login Successfuly'})
+
+    return res.status(200).json({ message: 'Login successfully' });
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
   }
-  catch(error){
-    return res.status(500).json({ message: error})
-  }
-})
+});
+
 module.exports = routes;

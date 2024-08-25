@@ -1,4 +1,6 @@
 const express = require('express')
+const cors = require('cors');
+const bodyparser = require('body-parser')
 const db = require('./config/DataBase')
 const student= require('./routes/users')
 const teacher = require('./routes/teacher')
@@ -9,7 +11,8 @@ const app = express()
 require('dotenv').config()
 db()
 
-app.use(express.json());
+app.use(cors());
+app.use(bodyparser.json());
 app.use('/api/user',student)
 app.use('/api/teacher',teacher)
 app.use('/api/admin',admin)
